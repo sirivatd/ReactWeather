@@ -27,7 +27,6 @@ class App extends React.Component {
     )
       .then(res => res.json())
       .then(resString => {
-        console.log(resString);
         if (city && country) {
           this.setState({
             temperature: resString.main.temperature,
