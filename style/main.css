@@ -26,6 +26,9 @@ body {
   left: 0;
   height: 100%;
   width: 40%;
+  background-image: url("https://pbs.twimg.com/media/CuPsB_eXEAAmirk.jpg");
+  background-size: 100% 100%;
+  text-align: center;
 }
 
 .weather-section {
@@ -34,4 +37,10 @@ body {
   position: absolute;
   right: 0;
   height: 100%;
+}
+
+#title-text {
+  margin-top: 75px;
+  font-size: 40px;
+  font-family: "Fredoka One", cursive;
 }

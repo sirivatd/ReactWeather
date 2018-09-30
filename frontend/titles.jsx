@@ -1,4 +1,4 @@
 import React from "react";
 
-const Titles = () => <h3>I'm the titles</h3>;
+const Titles = () => <h2 id="title-text">ReactWeather</h2>;
 export default Titles;
