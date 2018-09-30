@@ -28,6 +28,25 @@ class App extends React.Component {
       .then(res => res.json())
       .then(resString => {
         console.log(resString);
+        if (city && country) {
+          this.setState({
+            temperature: resString.main.temperature,
+            city: resString.name,
+            country: resString.sys.country,
+            humidity: resString.main.humidity,
+            description: resString.weather[0].description,
+            error: ""
+          });
+        } else {
+          this.setState({
+            temperature: undefined,
+            city: undefined,
+            country: undefined,
+            humidity: undefined,
+            description: undefined,
+            error: "Please input valid values"
+          });
+        }
       });
   }
 
@@ -36,7 +55,14 @@ class App extends React.Component {
       <div>
         <Titles />
         <Form getWeather={this.getWeather} />
-        <Weather />
+        <Weather
+          temperature={this.state.temperature}
+          city={this.state.city}
+          country={this.state.country}
+          humidity={this.state.humidity}
+          description={this.state.description}
+          error={this.state.error}
+        />
       </div>
     );
   }
