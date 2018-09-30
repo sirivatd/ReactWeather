@@ -32,15 +32,63 @@ body {
 }
 
 .weather-section {
-  background-color: red;
   width: 60%;
   position: absolute;
   right: 0;
   height: 100%;
+  text-align: center;
 }
 
 #title-text {
-  margin-top: 75px;
-  font-size: 40px;
+  margin-top: 85px;
+  font-size: 30px;
   font-family: "Fredoka One", cursive;
+}
+
+#weather-form {
+  margin-top: 75px;
+  display: flex;
+  justify-content: space-around;
+}
+
+input[type="text"] {
+  background-color: Transparent;
+  border: none;
+  border-bottom: 2px solid white;
+  font-size: 12px;
+  color: white;
+}
+
+#submit-button {
+  border-radius: 5px;
+  background-color: #de6161;
+  border-color: #de6161;
+  color: white;
+  height: 35px;
+  font-size: 13px;
+  width: 130px;
+  font-family: "Fredoka One", cursive;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#submit-button:hover {
+  transform: scale(1.2);
+}
+
+#weather-details {
+  text-align: left;
+}
+
+p {
+  margin-left: 20px;
+  font-size: 20px;
+  border-bottom: 1px solid white;
+  margin-right: 20px;
+  padding-bottom: 25px;
+  color: white;
+  font-family: "Varela Round", sans-serif;
+}
+
+#category {
+  color: #de6161;
 }

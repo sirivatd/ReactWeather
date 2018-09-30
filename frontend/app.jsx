@@ -29,7 +29,7 @@ class App extends React.Component {
       .then(resString => {
         if (city && country) {
           this.setState({
-            temperature: resString.main.temperature,
+            temperature: resString.main.temp,
             city: resString.name,
             country: resString.sys.country,
             humidity: resString.main.humidity,
